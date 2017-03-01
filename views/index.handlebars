@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center enter_section">
+			<form action="/tweets/create" method="POST">
+				<input type="text" class="form-control" name="hash_name" value="" id="hash-entry" placeholder="Add a hashtag" onkeypress="hashtag()">
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4 col-s-4 col-md-4 col-lg-4 text-center" class="task">
+			<div class="row">
+			  	<ul>
+				  	{{#each tweets}}
+				  	<li>{{ this.user.screen_name }}</li>
+				  	<li>{{ this.text }}</li>
+				  	<li>{{ this.created_at}}</li>
+				  	
+				  	{{/each }}
+
+				</ul>
+			</div>
+	</div>
+</div>
+
+

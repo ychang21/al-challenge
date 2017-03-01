@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  height: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #333A39;
+}
+
+#dev {
+  position: relative;
+  top: 25px;
+  left: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+#dev:hover {
+  color: #008B78;
+}
+
