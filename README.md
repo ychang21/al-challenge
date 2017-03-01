@@ -3,10 +3,17 @@
 ### This is an app that uses the Twitter NPM package to generates 3 tweets from a hashtag search.
 
 ### To use this app: 
-	1. simply clone the repository
+	1. clone the repository
 	2. npm install everything in the package.json
-	3. run node server.js
-	4. open up localhost:3000 on your browser
+	3. create an app on https://dev.twitter.com/ to retrieve the consumer key, consumer secret, access token key, and access token secret. Place these values in the controllers folder in a file called keys.js with the structure like this:
+		exports.twitterKeys = {
+		    consumer_key: 'Consumer Key',
+		    consumer_secret: 'Consumer Secret',
+		    access_token_key: 'Access Token Key',
+		    access_token_secret: 'Access Token Key',
+		}
+	4. run node server.js
+	5. open up localhost:3000 on your browser
 
 
 ### Technologies
